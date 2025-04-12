@@ -1,0 +1,1 @@
+{"version":3,"file":"styles.css","mappings":";;;AAAA;EACI;AACJ,C","sources":["webpack://brads-boilerplate-theme/./src/styles/styles.scss"],"sourcesContent":["body{\r\n    background: red;\r\n}"],"names":[],"sourceRoot":""}

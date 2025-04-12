@@ -1,0 +1,9 @@
+@import "./header/header.scss";
+body{
+    font-family: 'Avenir Next', sans-serif;
+}
+.container{
+    width: calc(100% - 136px);
+    max-width: 1440px;
+    margin: 0 auto;
+}

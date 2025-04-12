@@ -1,0 +1,36 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 61px!important;
+
+    &__logo{
+        display: block;
+        width: 100%;
+        max-width: 294px;
+        height: 31px;
+        margin: auto 0 0 0;
+    }
+    &__lang{
+        color: #fff;
+        font-size: 13px;
+        display: block;
+        margin-left: auto;
+        width: fit-content;
+        margin-bottom: 35px;
+        margin-top: 0;
+    }
+    &__menu{
+        &--list{
+            list-style: none;
+            display: flex;
+            gap: 27px;
+            margin: 0;
+            &-item{
+                color: #fff;
+                font-size: 13px;
+                text-decoration: none;
+            }
+        }
+
+    }
+}
