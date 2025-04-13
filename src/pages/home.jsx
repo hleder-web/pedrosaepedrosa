@@ -19,24 +19,22 @@ const Home = () => {
         navigation
         direction="vertical"
         pagination={{ clickable: true }}
-        // effect="fade" // Ativa o efeito de fade in/out
-        // fadeEffect={{ crossFade: true }} // Suaviza a transição
         className="meu-swiper"
       >
         <SwiperSlide>
-          <img src="/wp-content/themes/brads-boilerplate-theme/assets/1.png" alt="Natureza" />
+          <img src="/wp-content/themes/pedrosaepedrosa/assets/1.png" alt="Natureza" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/wp-content/themes/brads-boilerplate-theme/assets/2.png" alt="Cidade" />
+          <img src="/wp-content/themes/pedrosaepedrosa/assets/2.png" alt="Cidade" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/wp-content/themes/brads-boilerplate-theme/assets/3.png" alt="Tecnologia" />
+          <img src="/wp-content/themes/pedrosaepedrosa/assets/3.png" alt="Tecnologia" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/wp-content/themes/brads-boilerplate-theme/assets/4.png" alt="Tecnologia" />
+          <img src="/wp-content/themes/pedrosaepedrosa/assets/4.png" alt="Tecnologia" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/wp-content/themes/brads-boilerplate-theme/assets/5.png" alt="Tecnologia" />
+          <img src="/wp-content/themes/pedrosaepedrosa/assets/5.png" alt="Tecnologia" />
         </SwiperSlide>
       </Swiper>
 
