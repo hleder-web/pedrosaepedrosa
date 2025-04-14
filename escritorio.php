@@ -13,7 +13,8 @@ get_header(); ?>
     <img src="/wp-content/themes/pedrosaepedrosa/assets/escritorio1.png" alt="" class="escritorio__full--image">
 </section>
 <section class="escritorio__perfil">
-   <div class="escritorio__perfil--box">
+    <div class="escritorio__perfil--grid container">
+    <div class="escritorio__perfil--box">
    <h2  class="escritorio__perfil--title">Cynthia</h2>
    <p class="escritorio__perfil--text">Thanks to all of you who helped build a successful  career. Among clients, friends, family and suppliers,  each incentive fueled the desire to continue and  improve. A permanent immersion in a universe of  image, harmony and proportion.</p>
    </div>
@@ -24,6 +25,8 @@ get_header(); ?>
    <h2  class="escritorio__perfil--title">Raphael</h2>
    <p class="escritorio__perfil--text">Thanks to all of you who helped build a successful  career. Among clients, friends, family and suppliers,  each incentive fueled the desire to continue and  improve. A permanent immersion in a universe of  image, harmony and proportion.</p>
    </div>
+    </div>
+
 </section>
 <script src="<?php echo get_template_directory_uri(); ?>/build/escritorio.js"></script>
 <?php get_footer();?>

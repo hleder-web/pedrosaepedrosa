@@ -1,1 +1,62 @@
 @import "styles.scss";
+body{
+    margin: 0;
+}
+.escritorio{
+     &__full{
+        position: relative;
+        margin-top: -88px;
+        &--image{
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        &--box{
+            position: absolute;
+            top: 50%;
+            left: 68px;
+            transform: translateY(-50%);
+            z-index: 9;
+           
+        }
+        &--title{
+            color: #fff;
+            font-size: 66px;
+            font-weight: 500;
+            margin-bottom: 42px;
+        }
+        &--text{
+            font-size: 17px;
+            color: #fff;
+            max-width: 616px;
+            line-height: 26px;
+            margin: 0;
+        }
+     }
+     &__perfil{
+        background: #FCFCF2;
+        &--grid{
+            display: grid;
+            grid-template-columns: 1fr max(438px) 1fr;
+            padding-top: 204px;
+            padding-bottom: 108px;
+            gap: 39px;
+
+        }
+        &--box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        &--title{
+            font-size: 50px;
+            color: #58585A;
+            margin-bottom: 19px;
+        }
+        &--text{
+            font-size: 17px;
+            color: #58585A;
+        }
+     }
+}
