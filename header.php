@@ -12,9 +12,9 @@
       <p class="header__lang">port - eng</p>
     <nav class="header__menu">
             <ul class="header__menu--list">
-                <li ><a class="header__menu--list-item" href="#">Home</a></li>
+                <li ><a class="header__menu--list-item" href="/">Home</a></li>
                 <li ><a class="header__menu--list-item" href="/escritorio">Escritório </a></li>
-                <li ><a class="header__menu--list-item" href="#">Projetos</a></li>
+                <li ><a class="header__menu--list-item" href="/projetos">Projetos</a></li>
                 <li ><a class="header__menu--list-item" href="#">Clipping</a></li>
                 <li ><a class="header__menu--list-item" href="#">Contato</a></li>
             </ul>

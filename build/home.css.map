@@ -1,1 +1,0 @@
-{"version":3,"file":"home.css","mappings":";;;AAEA;EACI;AADJ,C","sources":["webpack://pedrosaepedrosa/./src/styles/home.scss"],"sourcesContent":["\r\n\r\nbody{\r\n    display: block;\r\n}"],"names":[],"sourceRoot":""}

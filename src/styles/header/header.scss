@@ -4,6 +4,14 @@
     position: sticky;
     z-index: 9;
     top: 61px;
+    &.dark{
+        .header__menu--list-item{
+            color: #000!important;
+        }
+        .header__logo {
+            filter: invert(1);
+        }
+    }
     &__logo{
         display: block;
         width: 100%;
@@ -35,3 +43,10 @@
 
     }
 }
+
+  .sentinela {
+    height: 1px;
+    width: 100%;
+    position: relative;
+
+  }

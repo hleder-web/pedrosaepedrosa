@@ -2,12 +2,17 @@ const path = require("path");
 const glob = require("glob");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
+// CAPTURA ARQUIVOS SCSS
 const scssFiles = glob.sync("./src/styles/*.scss").reduce((entries, file) => {
   const name = path.basename(file, ".scss");
   entries[name] = file;
   return entries;
 }, {});
 
+// LOG PARA VERIFICAR OS ARQUIVOS .scss ENCONTRADOS
+console.log("SCSS ENTRIES:", scssFiles);
+
+// CAPTURA ARQUIVOS JS
 const jsFiles = glob.sync("./src/*.js").reduce((entries, file) => {
   const name = path.basename(file, ".js");
   entries[name] = file;
@@ -41,7 +46,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.css$/, // Adiciona suporte para arquivos CSS no node_modules
+        test: /\.css$/,
         use: [
           MiniCssExtractPlugin.loader,
           "css-loader"
