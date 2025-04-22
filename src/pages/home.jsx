@@ -22,19 +22,19 @@ const Home = () => {
         className="meu-swiper"
       >
         <SwiperSlide>
-          <img src="/wp-content/themes/pedrosaepedrosa/assets/1.png" alt="Natureza" />
+          <img src="/wp-content/themes/pedrosaepedrosa2025/assets/1.png" alt="Natureza" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/wp-content/themes/pedrosaepedrosa/assets/2.png" alt="Cidade" />
+          <img src="/wp-content/themes/pedrosaepedrosa2025/assets/2.png" alt="Cidade" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/wp-content/themes/pedrosaepedrosa/assets/3.png" alt="Tecnologia" />
+          <img src="/wp-content/themes/pedrosaepedrosa2025/assets/3.png" alt="Tecnologia" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/wp-content/themes/pedrosaepedrosa/assets/4.png" alt="Tecnologia" />
+          <img src="/wp-content/themes/pedrosaepedrosa2025/assets/4.png" alt="Tecnologia" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/wp-content/themes/pedrosaepedrosa/assets/5.png" alt="Tecnologia" />
+          <img src="/wp-content/themes/pedrosaepedrosa2025/assets/5.png" alt="Tecnologia" />
         </SwiperSlide>
       </Swiper>
 

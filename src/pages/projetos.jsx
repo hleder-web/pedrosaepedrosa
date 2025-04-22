@@ -24,16 +24,16 @@ Iluminação: Lux Projetos
 
 Fotos: Pedro Kok`,
     images: [
-      "/wp-content/themes/pedrosaepedrosa/assets/restaurante-anna-1.png",
-      "/wp-content/themes/pedrosaepedrosa/assets/restaurante-anna-2.png",
-      "/wp-content/themes/pedrosaepedrosa/assets/restaurante-anna-3.png",
-      "/wp-content/themes/pedrosaepedrosa/assets/restaurante-anna-4.png",
-      "/wp-content/themes/pedrosaepedrosa/assets/restaurante-anna-5.png",
-      "/wp-content/themes/pedrosaepedrosa/assets/restaurante-anna-6.png",
-      "/wp-content/themes/pedrosaepedrosa/assets/restaurante-anna-7.png",
-      "/wp-content/themes/pedrosaepedrosa/assets/restaurante-anna-8.png",
-      "/wp-content/themes/pedrosaepedrosa/assets/restaurante-anna-9.png",
-      "/wp-content/themes/pedrosaepedrosa/assets/restaurante-anna-10.png",
+      "/wp-content/themes/pedrosaepedrosa2025/assets/restaurante-anna-1.png",
+      "/wp-content/themes/pedrosaepedrosa2025/assets/restaurante-anna-2.png",
+      "/wp-content/themes/pedrosaepedrosa2025/assets/restaurante-anna-3.png",
+      "/wp-content/themes/pedrosaepedrosa2025/assets/restaurante-anna-4.png",
+      "/wp-content/themes/pedrosaepedrosa2025/assets/restaurante-anna-5.png",
+      "/wp-content/themes/pedrosaepedrosa2025/assets/restaurante-anna-6.png",
+      "/wp-content/themes/pedrosaepedrosa2025/assets/restaurante-anna-7.png",
+      "/wp-content/themes/pedrosaepedrosa2025/assets/restaurante-anna-8.png",
+      "/wp-content/themes/pedrosaepedrosa2025/assets/restaurante-anna-9.png",
+      "/wp-content/themes/pedrosaepedrosa2025/assets/restaurante-anna-10.png",
     ],
   },
   {
@@ -41,7 +41,7 @@ Fotos: Pedro Kok`,
     category: "comercial",
     description: "Informações detalhadas sobre o projeto da Joalheria Leblon.",
     images: [
-      "/wp-content/themes/pedrosaepedrosa/assets/joalheria.png",
+      "/wp-content/themes/pedrosaepedrosa2025/assets/joalheria.png",
     ],
   },
   {
@@ -49,7 +49,7 @@ Fotos: Pedro Kok`,
     category: "residencial",
     description: "Texto descritivo sobre a *Casa Jardim Pernambuco III*.",
     images: [
-      "/wp-content/themes/pedrosaepedrosa/assets/casa3.png",
+      "/wp-content/themes/pedrosaepedrosa2025/assets/casa3.png",
     ],
   },
   {
@@ -57,7 +57,7 @@ Fotos: Pedro Kok`,
     category: "residencial",
     description: "Descrição da cobertura localizada em São Conrado.",
     images: [
-      "/wp-content/themes/pedrosaepedrosa/assets/coberturasao.png",
+      "/wp-content/themes/pedrosaepedrosa2025/assets/coberturasao.png",
     ],
   },
   {
@@ -65,7 +65,7 @@ Fotos: Pedro Kok`,
     category: "residencial",
     description: "Detalhes da *Cobertura Leblon I*.",
     images: [
-      "/wp-content/themes/pedrosaepedrosa/assets/coberturaleblon.png",
+      "/wp-content/themes/pedrosaepedrosa2025/assets/coberturaleblon.png",
     ],
   },
   {
@@ -73,7 +73,7 @@ Fotos: Pedro Kok`,
     category: "residencial",
     description: "Mais informações sobre a Casa Jardim Pernambuco II.",
     images: [
-      "/wp-content/themes/pedrosaepedrosa/assets/casa2.png",
+      "/wp-content/themes/pedrosaepedrosa2025/assets/casa2.png",
     ],
   },
 ];
