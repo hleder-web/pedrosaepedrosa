@@ -14,7 +14,7 @@ get_header(); ?>
         <p class="escritorio__full--text">
             Pedrosa & Pedrosa Arquitetos Associados has a team of professionals trained  to execute exclusive projects no matter what size or complexity. The office  follows a style that blends classic and modern, with harmony. The main goal  is to have a wide and clean space, characteristics attributed to the modern,  style, but keeping the charming references of the classic style. Customer’s  taste is carefully analyzed to achieve a final result that associates their  desires with a harmonious and balanced space. </p>
     </div>    
-    <img src="/wp-content/themes/pedrosaepedrosa2025/assets/escritorio1.png" alt="" class="escritorio__full--image">
+    <img src="http://pedrosaepedrosa.com/wp-content/themes/pedrosaepedrosa2025/assets/escritorio1.png" alt="" class="escritorio__full--image">
 </section>
 <section class="escritorio__perfil" data-bg="escuro" >
 <div class="sentinela" data-bg="escuro"></div>
@@ -25,7 +25,7 @@ get_header(); ?>
    <p class="escritorio__perfil--text">Thanks to all of you who helped build a successful  career. Among clients, friends, family and suppliers,  each incentive fueled the desire to continue and  improve. A permanent immersion in a universe of  image, harmony and proportion.</p>
    </div>
    <div class="escritorio__perfil--box">
-   <img src="/wp-content/themes/pedrosaepedrosa2025/assets/escritorio2.png" alt="" class="escritorio__perfil--image">
+   <img src="http://pedrosaepedrosa.com/wp-content/themes/pedrosaepedrosa2025/assets/escritorio2.png" alt="" class="escritorio__perfil--image">
    </div>
    <div class="escritorio__perfil--box">
    <h2  class="escritorio__perfil--title">Raphael</h2>

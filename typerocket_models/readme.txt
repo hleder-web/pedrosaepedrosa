@@ -1,0 +1,1 @@
+Estes arquivos são apenas backups, os originais para funcionar estão em /plugin/typerocket-v5/typerocket/app/Models

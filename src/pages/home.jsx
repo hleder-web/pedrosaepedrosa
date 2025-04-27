@@ -22,19 +22,34 @@ const Home = () => {
         className="meu-swiper"
       >
         <SwiperSlide>
-          <img src="/wp-content/themes/pedrosaepedrosa2025/assets/1.png" alt="Natureza" />
+          <img
+            src="http://pedrosaepedrosa.com/wp-content/themes/pedrosaepedrosa2025/assets/1.png"
+            alt="Natureza"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/wp-content/themes/pedrosaepedrosa2025/assets/2.png" alt="Cidade" />
+          <img
+            src="http://pedrosaepedrosa.com/wp-content/themes/pedrosaepedrosa2025/assets/2.png"
+            alt="Cidade"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/wp-content/themes/pedrosaepedrosa2025/assets/3.png" alt="Tecnologia" />
+          <img
+            src="http://pedrosaepedrosa.com/wp-content/themes/pedrosaepedrosa2025/assets/3.png"
+            alt="Tecnologia"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/wp-content/themes/pedrosaepedrosa2025/assets/4.png" alt="Tecnologia" />
+          <img
+            src="http://pedrosaepedrosa.com/wp-content/themes/pedrosaepedrosa2025/assets/4.png"
+            alt="Tecnologia"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/wp-content/themes/pedrosaepedrosa2025/assets/5.png" alt="Tecnologia" />
+          <img
+            src="http://pedrosaepedrosa.com/wp-content/themes/pedrosaepedrosa2025/assets/5.png"
+            alt="Tecnologia"
+          />
         </SwiperSlide>
       </Swiper>
 
@@ -43,8 +58,20 @@ const Home = () => {
         className="custom-next"
         onClick={() => swiperRef.current?.swiper.slideNext()} // Corrige a chamada do método
       >
-        <svg width="30" height="16" viewBox="0 0 30 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1 1L15 15L29 1" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        <svg
+          width="30"
+          height="16"
+          viewBox="0 0 30 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1 1L15 15L29 1"
+            stroke="white"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
         </svg>
       </button>
     </>

@@ -1,0 +1,8 @@
+li#menu-posts,
+li#menu-comments,
+li#menu-appearance .wp-first-item,
+li#toplevel_page_typerocket_ui_register,
+.notice.notice-warning.is-dismissible,
+li#menu-comments {
+  display: none;
+}
