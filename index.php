@@ -6,6 +6,7 @@ get_header();
 ?>
 
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/build/home.css">
+
 <!-- <div id="root"></div> -->
 
 <?php 
