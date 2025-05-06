@@ -14,6 +14,10 @@
 				'type'        => 'image',
 				'label'       => __( 'Imagem', 'Pedrosa' ),
 			]
+			'imagemobile' => [
+				'type'        => 'image',
+				'label'       => __( 'Imagem Mobile', 'Pedrosa' ),
+			]
 		]
 	]);
 ?>
