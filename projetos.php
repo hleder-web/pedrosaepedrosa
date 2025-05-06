@@ -1,50 +1,47 @@
 <?php
-    /*
-        Template Name: projetos
-    */
-    get_header(); 
+get_header();
+
+$projects = [];
+$categories = [];
+
+$args = ['post_type' => 'projects', 'posts_per_page' => -1];
+$query = new WP_Query($args);
+
+if ($query->have_posts()) {
+    while ($query->have_posts()) {
+        $query->the_post();
+
+        $terms = get_the_terms(get_the_ID(), 'types');
+        $term_slug = $terms[0]->slug ?? '';
+        $term_name = $terms[0]->name ?? '';
+
+        if ($term_slug && !in_array($term_name, $categories)) {
+            $categories[] = $term_name;
+        }
+
+        $images = [];
+        if (tr_field('project_images')) {
+            foreach (tr_field('project_images') as $img) {
+                $images[] = wp_get_attachment_url($img['image']);
+            }
+        }
+
+        $projects[] = [
+            'name' => get_the_title(),
+            'category' => $term_name,
+            'description' => tr_field('description') ?? '',
+            'images' => $images,
+        ];
+    }
+    wp_reset_postdata();
+}
 ?>
 
-<div id="root" ></div>
+<script>
+  window.projetosData = <?php echo json_encode($projects); ?>;
+  window.projetosCategories = <?php echo json_encode($categories); ?>;
+</script>
 
-<div>
-    <h1>FILTROS</h1>
-    <?php 
-        $terms = get_terms([
-            'taxonomy' => 'types',
-            'hide_empty' => true,
-        ]); 
-        foreach($terms as $item):
-    ?>
-        <li class="services__card-info">
-            <a href="/sizes/<?php echo $item->slug; ?>">
-                <h3><?php echo $item->name; ?></h3>
-            </a>
-        </li>
-    <?php endforeach; ?>
-    <h1>lista de posts</h1>
-    <?php 
-        $args = array('post_type'=> 'projects'); 
-        $result = new WP_Query($args);
-        $total = $result->found_posts;
-        if($total > 0):
-    ?>
-        <?php while ( $result->have_posts() ) : 
-            $result->the_post(); 
-        ?>  
-        
-            <?php echo the_title(); ?>
-            <?php if(tr_field('project_images')): ?>
-                    <?php 
-                        $images = tr_field('project_images');
-                        foreach($images as $item):
-                    ?>
-                        <?php echo wp_get_attachment_url($item['image']); ?>
-                    <?php endforeach; ?>
-            <?php endif; ?>
-            <?php echo tr_field('description'); ?>
-        <?php endwhile; ?>
-    <?php endif; ?>
-</div>
+<div id="root"></div>
 <script src="<?php echo get_template_directory_uri(); ?>/build/projetos.js"></script>
 <?php get_footer(); ?>

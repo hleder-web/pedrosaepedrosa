@@ -7,16 +7,23 @@
   </head>
   <body <?php body_class(); ?>>
     <header class="header container">
-    <img class="header__logo" src="<?php echo get_template_directory_uri(); ?>/assets/logo.svg" alt="logo">
+    <a href="/" class="header__logo">
+        <?php $image = get_theme_mod( 'header_logo', 'Pedrosa' ); ?>
+        <img  src="<?php echo esc_url( $image ); ?>" alt="logo" />
+    </a>
     <div class="header__grid">
-      <p class="header__lang">port - eng</p>
-    <nav class="header__menu">
+   <p style="" class="header__lang">port - eng</p> 
+    <nav class="header__menu" >
             <ul class="header__menu--list">
-                <li ><a class="header__menu--list-item" href="/">Home</a></li>
-                <li ><a class="header__menu--list-item" href="/escritorio">Escritório </a></li>
-                <li ><a class="header__menu--list-item" href="/projetos">Projetos</a></li>
-                <li ><a class="header__menu--list-item" href="#">Clipping</a></li>
-                <li ><a class="header__menu--list-item" href="#">Contato</a></li>
+                  <?php 
+        $items = wp_get_nav_menu_items('Menu Principal');
+        foreach ($items as $item):
+    ?>
+    
+          <li class="header__item">
+              <a class="header__menu--list-item" href="<?php echo $item->url; ?>"><?php echo $item->title; ?></a>
+          </li>
+    <?php endforeach; ?>
             </ul>
     </nav>
     </div>

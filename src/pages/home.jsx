@@ -1,18 +1,20 @@
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, EffectFade } from "swiper/modules"; // Importa os módulos extras
+import { Navigation, Pagination, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 
 const Home = () => {
-  const swiperRef = useRef(null); // Criar referência para o Swiper
+  const swiperRef = useRef(null);
+
+  const sliderImages = window.sliderImages || [];
 
   return (
     <>
       <Swiper
-        ref={swiperRef} // Define a referência no Swiper
+        ref={swiperRef}
         modules={[Navigation, Pagination, EffectFade]}
         slidesPerView={1}
         loop={true}
@@ -21,42 +23,16 @@ const Home = () => {
         pagination={{ clickable: true }}
         className="meu-swiper"
       >
-        <SwiperSlide>
-          <img
-            src="http://pedrosaepedrosa.com/wp-content/themes/pedrosaepedrosa2025/assets/1.png"
-            alt="Natureza"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="http://pedrosaepedrosa.com/wp-content/themes/pedrosaepedrosa2025/assets/2.png"
-            alt="Cidade"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="http://pedrosaepedrosa.com/wp-content/themes/pedrosaepedrosa2025/assets/3.png"
-            alt="Tecnologia"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="http://pedrosaepedrosa.com/wp-content/themes/pedrosaepedrosa2025/assets/4.png"
-            alt="Tecnologia"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="http://pedrosaepedrosa.com/wp-content/themes/pedrosaepedrosa2025/assets/5.png"
-            alt="Tecnologia"
-          />
-        </SwiperSlide>
+        {sliderImages.map((item, index) => (
+          <SwiperSlide key={index}>
+            <img src={item.src} alt={`Slide ${index + 1}`} />
+          </SwiperSlide>
+        ))}
       </Swiper>
 
-      {/* Botão personalizado para "Próximo Slide" */}
       <button
         className="custom-next"
-        onClick={() => swiperRef.current?.swiper.slideNext()} // Corrige a chamada do método
+        onClick={() => swiperRef.current?.swiper.slideNext()}
       >
         <svg
           width="30"

@@ -1,91 +1,93 @@
 import React, { useState } from "react";
 import ReactMarkdown from "react-markdown";
 
-const postsData = [
-  {
-    name: "Restaurante Anna",
-    category: "comercial",
-    description: `
-Local: São Paulo  
+// const postsData = [
+//   {
+//     name: "Restaurante Anna",
+//     category: "comercial",
+//     description: `
+// Local: São Paulo  
 
-Data do projeto: 2024  
+// Data do projeto: 2024  
 
-Área: 434 m²  
+// Área: 434 m²  
 
-Arquitetura: Bernardes Arquitetura  
+// Arquitetura: Bernardes Arquitetura  
 
-Interiores: Bernardes Arquitetura  
+// Interiores: Bernardes Arquitetura  
 
-Equipe: Thiago Bernardes, Márcia Santoro, Camila Tariki, Felipe Coimbra, Daniel Farfelmaze, Heriane Ramos, Pérola Machado, Luísa Mader, Natália Valente, Anna Carolina Lancsarics, Giovanna Custódio, Paula Rimi, Rubens Takahashi  
+// Equipe: Thiago Bernardes, Márcia Santoro, Camila Tariki, Felipe Coimbra, Daniel Farfelmaze, Heriane Ramos, Pérola Machado, Luísa Mader, Natália Valente, Anna Carolina Lancsarics, Giovanna Custódio, Paula Rimi, Rubens Takahashi  
 
-Paisagismo: Rodrigo Oliveira  
+// Paisagismo: Rodrigo Oliveira  
 
-Iluminação: Lux Projetos  
+// Iluminação: Lux Projetos  
 
-Fotos: Pedro Kok`,
-    images: [
-      "/wp-content/themes/pedrosaepedrosa2025/assets/restaurante-anna-1.png",
-      "/wp-content/themes/pedrosaepedrosa2025/assets/restaurante-anna-2.png",
-      "/wp-content/themes/pedrosaepedrosa2025/assets/restaurante-anna-3.png",
-      "/wp-content/themes/pedrosaepedrosa2025/assets/restaurante-anna-4.png",
-      "/wp-content/themes/pedrosaepedrosa2025/assets/restaurante-anna-5.png",
-      "/wp-content/themes/pedrosaepedrosa2025/assets/restaurante-anna-6.png",
-      "/wp-content/themes/pedrosaepedrosa2025/assets/restaurante-anna-7.png",
-      "/wp-content/themes/pedrosaepedrosa2025/assets/restaurante-anna-8.png",
-      "/wp-content/themes/pedrosaepedrosa2025/assets/restaurante-anna-9.png",
-      "/wp-content/themes/pedrosaepedrosa2025/assets/restaurante-anna-10.png",
-    ],
-  },
-  {
-    name: "Joalheria Leblon",
-    category: "comercial",
-    description: "Informações detalhadas sobre o projeto da Joalheria Leblon.",
-    images: [
-      "/wp-content/themes/pedrosaepedrosa2025/assets/joalheria.png",
-    ],
-  },
-  {
-    name: "Casa Jardim Pernambuco III",
-    category: "residencial",
-    description: "Texto descritivo sobre a *Casa Jardim Pernambuco III*.",
-    images: [
-      "/wp-content/themes/pedrosaepedrosa2025/assets/casa3.png",
-    ],
-  },
-  {
-    name: "Cobertura São Conrado",
-    category: "residencial",
-    description: "Descrição da cobertura localizada em São Conrado.",
-    images: [
-      "/wp-content/themes/pedrosaepedrosa2025/assets/coberturasao.png",
-    ],
-  },
-  {
-    name: "Cobertura Leblon I",
-    category: "residencial",
-    description: "Detalhes da *Cobertura Leblon I*.",
-    images: [
-      "/wp-content/themes/pedrosaepedrosa2025/assets/coberturaleblon.png",
-    ],
-  },
-  {
-    name: "Casa Jardim Pernambuco II",
-    category: "residencial",
-    description: "Mais informações sobre a Casa Jardim Pernambuco II.",
-    images: [
-      "/wp-content/themes/pedrosaepedrosa2025/assets/casa2.png",
-    ],
-  },
-];
+// Fotos: Pedro Kok`,
+//     images: [
+//       "/wp-content/themes/pedrosaepedrosa2025/assets/restaurante-anna-1.png",
+//       "/wp-content/themes/pedrosaepedrosa2025/assets/restaurante-anna-2.png",
+//       "/wp-content/themes/pedrosaepedrosa2025/assets/restaurante-anna-3.png",
+//       "/wp-content/themes/pedrosaepedrosa2025/assets/restaurante-anna-4.png",
+//       "/wp-content/themes/pedrosaepedrosa2025/assets/restaurante-anna-5.png",
+//       "/wp-content/themes/pedrosaepedrosa2025/assets/restaurante-anna-6.png",
+//       "/wp-content/themes/pedrosaepedrosa2025/assets/restaurante-anna-7.png",
+//       "/wp-content/themes/pedrosaepedrosa2025/assets/restaurante-anna-8.png",
+//       "/wp-content/themes/pedrosaepedrosa2025/assets/restaurante-anna-9.png",
+//       "/wp-content/themes/pedrosaepedrosa2025/assets/restaurante-anna-10.png",
+//     ],
+//   },
+//   {
+//     name: "Joalheria Leblon",
+//     category: "comercial",
+//     description: "Informações detalhadas sobre o projeto da Joalheria Leblon.",
+//     images: [
+//       "/wp-content/themes/pedrosaepedrosa2025/assets/joalheria.png",
+//     ],
+//   },
+//   {
+//     name: "Casa Jardim Pernambuco III",
+//     category: "residencial",
+//     description: "Texto descritivo sobre a *Casa Jardim Pernambuco III*.",
+//     images: [
+//       "/wp-content/themes/pedrosaepedrosa2025/assets/casa3.png",
+//     ],
+//   },
+//   {
+//     name: "Cobertura São Conrado",
+//     category: "residencial",
+//     description: "Descrição da cobertura localizada em São Conrado.",
+//     images: [
+//       "/wp-content/themes/pedrosaepedrosa2025/assets/coberturasao.png",
+//     ],
+//   },
+//   {
+//     name: "Cobertura Leblon I",
+//     category: "residencial",
+//     description: "Detalhes da *Cobertura Leblon I*.",
+//     images: [
+//       "/wp-content/themes/pedrosaepedrosa2025/assets/coberturaleblon.png",
+//     ],
+//   },
+//   {
+//     name: "Casa Jardim Pernambuco II",
+//     category: "residencial",
+//     description: "Mais informações sobre a Casa Jardim Pernambuco II.",
+//     images: [
+//       "/wp-content/themes/pedrosaepedrosa2025/assets/casa2.png",
+//     ],
+//   },
+// ];
 
-const categories = [
-  "residencial",
-  "comercial",
-  "campo + praia",
-  "internacional",
-  "mostras",
-];
+// const categories = [
+//   "residencial",
+//   "comercial",
+//   "campo + praia",
+//   "internacional",
+//   "mostras",
+// ];
 
+const postsData = window.projetosData || [];
+const categories = window.projetosCategories || [];
 export default function PaginaFiltro() {
   const [selectedCategory, setSelectedCategory] = useState("");
   const [searchTerm, setSearchTerm] = useState("");
