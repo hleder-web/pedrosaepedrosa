@@ -13,7 +13,7 @@
         //DETAILED SPECS - COLORS
         echo '<h1 style="font-weight:bolder;">Project images</h1><hr/>';
         echo $form->repeater('Project Images')->setFields([
-            $form->image('Image')
+            $form->image('Image'),
             $form->image('Image Mobile')
         ]);
 

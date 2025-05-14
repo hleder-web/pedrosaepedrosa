@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 
     function meu_tema_enqueue_assets() {
     if (is_page() || is_front_page()) {
@@ -40,4 +40,4 @@
     require get_template_directory() . '/inc/1_customizer_main-banner.php';
     require get_template_directory() . '/inc/2_customizer_projects.php';
 
-?>
+?> -->

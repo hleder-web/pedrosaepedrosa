@@ -4,11 +4,18 @@
     position: sticky;
     z-index: 9;
     top: 61px;
+    transition: .3s;
+    @media (max-width:991px) {
+      align-items: center;
+    }
     &.dark{
         .header__menu--list-item{
             color: #000!important;
+            @media (max-width:991px) {
+                color: #fff;
+              }
         }
-        .header__logo {
+        .header__logo,.menu-toggle {
             filter: invert(1);
         }
     }
@@ -18,6 +25,14 @@
         max-width: 294px;
         height: 31px;
         margin: auto 0 0 0;
+        img{
+            width: 100%;
+        }
+        @media (max-width:991px) {
+            max-width: 130px;
+            height: auto;
+            margin: 0;
+        }
     }
     &__lang{
         color: #fff;
@@ -27,8 +42,55 @@
         width: fit-content;
         margin-bottom: 35px;
         margin-top: 0;
+        @media (max-width:991px) {
+            display: none;
+        }
     }
     &__menu{
+        @media (max-width:991px) {
+         display: none;
+        }
+         &-mob{
+            display: none;
+       
+            .header__menu--list{
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                right: -100%;
+                top: 0;
+                background-color: #fcfcf2;
+                visibility: hidden;
+                transition: .3s;
+                box-sizing: border-box;
+                padding: 0 20px;
+                z-index: 9;
+                &-item{
+                    margin-bottom: 50px;
+                    display: block;
+                }
+            }
+
+            &.active{
+                display: block;
+                .header__menu--list{
+                    visibility: visible;
+                    right: 0;
+                }
+            }
+         }
+        &--topmob{
+            margin: 70px 0;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            .menu-close{
+                background: transparent;
+                border: 0;
+                padding: 0;
+            }
+        }
         &--list{
             list-style: none;
             display: flex;
@@ -38,11 +100,30 @@
                 color: #fff;
                 font-size: 13px;
                 text-decoration: none;
+                @media (max-width:991px) {
+                     color: #000;
+                }
             }
+
         }
+    
 
     }
 }
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    @media (max-width:991px) {
+        display: block;
+    }
+  }
+  
+
+  
 
   .sentinela {
     height: 1px;

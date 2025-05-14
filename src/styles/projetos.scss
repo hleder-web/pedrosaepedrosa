@@ -2,11 +2,18 @@
 body {
     background: #FCFCF2;
 }
+.menu-toggle{
+  filter: invert(1);
+}
 .pagina-filtro{
     margin-top: 240px;
     &__header{
         display: flex;
         position: relative;
+        @media (max-width:991px) {
+          flex-direction: column;
+          width: 100%;
+        }
     }
     &__back-button{
         border: 0;
@@ -21,8 +28,13 @@ body {
     &__search{
 
         &-wrapper{
-            position: absolute;
+            position: relative;
             right: 63px;
+            @media (max-width:991px) {
+              right: 0;
+              width: calc(100% - 40px);
+              margin: 0 auto;
+            }
         }
         &-icon {
             position: absolute;
@@ -32,6 +44,9 @@ body {
             height: 16px;
             transform: translateY(-50%);
             pointer-events: none;
+            @media (max-width:991px) {
+              top: 17px;
+            }
           }
       
           &-input {
@@ -42,6 +57,11 @@ body {
             font-size: 14px;
             background: #fcfcf2;
             box-sizing: border-box;
+            @media (max-width:991px) {
+              border-bottom: 1px solid;
+              border-radius: 0;
+              margin-bottom: 50px;
+            }
             &:focus {
               outline: none;
               background: #fff;
@@ -57,6 +77,12 @@ body {
         display: flex;
         gap: 63px;
         margin-bottom: 75px;
+        @media (max-width:991px) {
+          padding: 0 20px;
+          margin: 20px 0;
+          max-width: unset;
+          width: unset;
+        }
     }
     &__button {
         background: transparent;
@@ -67,6 +93,10 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 5px;
+        @media (max-width:991px) {
+          grid-template-columns:  1fr;
+
+        }
     }
     &__card{
         position: relative;
@@ -99,7 +129,7 @@ body {
     }
     &__post {
         display: grid;
-        grid-template-columns: max(260px) 1fr;
+        grid-template-columns: 1fr;
         gap: 114px;
         
         &-title{
@@ -116,7 +146,7 @@ body {
         }
         &-gallery{
             display: grid;
-            grid-template-columns: repeat(6, 1fr);
+            grid-template-columns: 1fr;
             gap: 7px;
         
             img {
@@ -128,42 +158,10 @@ body {
               object-fit: cover;
             }
         
-            // Linha 1
-            &-image--1 {
-              grid-column: span 2;
-            }
-            &-image--2 {
-              grid-column: span 2;
-            }
-            &-image--3 {
-              grid-column: span 2;
-            }
-        
-            // Linha 2
-            &-image--4 {
-              grid-column: span 4;
-            }
-            &-image--5 {
-              grid-column: span 1;
-            }
-            &-image--6 {
-              grid-column: span 1;
-            }
-        
-            // Linha 3
-            &-image--7 {
-              grid-column: span 2;
-            }
-            &-image--8 {
-              grid-column: span 1;
-            }
-            &-image--9 {
-              grid-column: span 1;
-            }
-            &-image--10 {
-              grid-column: span 2;
-            }
         }
        
+      }
+      &__zoom-overlay{
+        display: none;
       }
 }

@@ -6,10 +6,18 @@ body{
      &__full{
         position: relative;
         margin-top: -88px;
+ 
+        @media (max-width:991px) {
+            height: 100vh;
+          }
         &--image{
             display: block;
             width: 100%;
             height: auto;
+            @media (max-width:991px) {
+                height: 100%;
+                object-fit: cover;
+              }
         }
         &--box{
             position: absolute;
@@ -17,13 +25,21 @@ body{
             left: 68px;
             transform: translateY(-50%);
             z-index: 9;
-           
+            @media (max-width:991px) {
+                left: 20px;
+                right: 20px;
+            }
+         
         }
         &--title{
             color: #fff;
             font-size: 66px;
             font-weight: 500;
             margin-bottom: 42px;
+            @media (max-width:991px) {
+                margin-bottom: 20px;
+                font-size: 21px;
+            }
         }
         &--text{
             font-size: 17px;
@@ -31,6 +47,11 @@ body{
             max-width: 616px;
             line-height: 26px;
             margin: 0;
+            @media (max-width:991px) {
+                font-size: 10px;
+                line-height: 15px;
+
+            }
         }
      }
      &__perfil{
@@ -41,22 +62,39 @@ body{
             padding-top: 204px;
             padding-bottom: 108px;
             gap: 39px;
-
+            @media (max-width:991px) {
+                grid-template-columns: 1fr ;
+                padding-top: 50px;
+              }
         }
         &--box{
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            img{
+                width: 100%;
+                height: auto;
+            }
         }
         &--title{
             font-size: 50px;
             color: #58585A;
             margin-bottom: 19px;
+            @media (max-width:991px) {
+                font-size: 22px;
+
+            }
+            
         }
         &--text{
             font-size: 17px;
             color: #58585A;
+            @media (max-width:991px) {
+                font-size: 10px;
+                line-height: 25px;
+
+            }
         }
      }
 }

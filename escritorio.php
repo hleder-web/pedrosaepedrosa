@@ -6,8 +6,7 @@ Template Name: escritorio
 get_header(); ?>
 
 
-<section class="escritorio__full"  >
-<div class="sentinela" data-bg="claro"></div>
+<section class="escritorio__full"  data-theme="light">
 
     <div class="escritorio__full--box">
         <h1 class="escritorio__full--title">Cynthia  &  Raphael</h1>
@@ -16,8 +15,7 @@ get_header(); ?>
     </div>    
     <img src="http://pedrosaepedrosa.com/wp-content/themes/pedrosaepedrosa2025/assets/escritorio1.png" alt="" class="escritorio__full--image">
 </section>
-<section class="escritorio__perfil" data-bg="escuro" >
-<div class="sentinela" data-bg="escuro"></div>
+<section class="escritorio__perfil" data-theme="dark">
 
     <div class="escritorio__perfil--grid container">
     <div class="escritorio__perfil--box">
